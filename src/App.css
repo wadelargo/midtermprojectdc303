@@ -1,0 +1,84 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 10px;
+}
+
+.card {
+  background-color: #8deeee;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 10px;
+  width: calc(30% - 20px);
+  height: 300px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin: 0 0 5px;
+  color: #000000;
+  font-size: 2.0rem;
+  text-align: center;
+}
+
+.card h4 {
+  margin: 0;
+  color: #5761b8;
+  font-size: 2.0rem;
+  text-align: center;
+}
+
+
+.rating {
+  display: flex;
+  justify-content: center;
+  color: gold;
+  font-size: 3.0rem;
+}
+
+.rating span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  margin: 0 9px;
+}
+
+.filled {
+  background-color: #ffc107;
+}
+
+.filled::before {
+  content: '★'; 
+  font-size: 3.0rem;
+}
+
+span::before {
+  content: '☆'; 
+  font-size: 3.0rem; 
+}
+
+.title {
+  font-size: 4rem; 
+  margin-bottom: 20px; 
+  position: absolute;
+  top: 20px;
+}
+
